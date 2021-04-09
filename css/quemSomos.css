@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.quemSomos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2px;
+  width: 90%;
+  margin-left: 7%;
+  vertical-align: top;
+}
+
+/* Create os quadros */
+.quadroquemSomos {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+  margin-left:10%;
+  /*margin-top:2%; */
+  margin-right:5%;
+}
+.quadroquemSomos1 {
+  flex: 40%;
+  max-width: 40%;
+  padding: 0 4px;
+  margin-top:15%;
+  margin-bottom:25%;
+  text-align: center;
+  background-color: #FF8C63;
+
+}
+
+.quadroquemSomos img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.quadroquemSomos .paragrafoquemSomos {
+    color :#ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 4%;
+}
+
+.preparo{
+  width: 100%;
+}
+
+/* Responsive layout  */
+@media screen and (max-width: 820px) {
+
+  .quadroquemSomos1{
+    flex: 40%;
+    max-width: 40%;
+    font-size:0.9em;
+  }
+}
+
+@media screen and (max-width: 753px) {
+
+  .quadroquemSomos1{
+    flex: 40%;
+    max-width: 40%;
+    font-size:0.8em;
+  }
+}
+
+@media screen and (max-width: 646px) {
+
+  .quemSomos {
+    width:100%;
+  }
+  .quadroquemSomos {
+    flex: 50%;
+    max-width: 50%;
+    margin-left:21%;    
+  }
+
+  .quadroquemSomos1{
+    flex: 80%;
+    max-width: 80%;
+    font-size:1.0em;
+    margin-top:2%;
+    margin-left:5%;
+  }
+
+  .quadroquemSomos .paragrafoquemSomos { 
+    margin-bottom: 2%;
+  }
+}
